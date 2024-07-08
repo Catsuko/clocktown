@@ -15,6 +15,7 @@ defmodule Clocktown.Application do
       # {Clocktown.Worker, arg},
       # Start to serve requests, typically the last entry
       {Clocktown.Counter, 0},
+      {Clocktown.History, 50},
       ClocktownWeb.Endpoint
     ]
 
