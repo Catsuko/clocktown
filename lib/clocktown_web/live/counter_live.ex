@@ -40,6 +40,6 @@ defmodule ClocktownWeb.CounterLive do
   defp render_chart_svg(data) do
     sparkline = Contex.Sparkline.new(data)
     %Contex.Sparkline{sparkline | width: 600, height: 50}
-      |> Sparkline.draw()
+      |> Contex.Sparkline.draw()
   end
 end
